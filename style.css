@@ -1,11 +1,11 @@
 @font-face {
     font-family: "odin";
-    src: url("./Norse-Bold.otf");
+    src: url("./font/Norse-Bold.otf");
 }
 
 @font-face {
     font-family: "montserrat";
-    src: url("./Montserrat-Regular.ttf");
+    src: url("./font/Montserrat-Regular.ttf");
 }
 
 :root {
