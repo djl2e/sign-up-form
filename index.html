@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign-up-form</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="left-side">
+            <div class="logo">
+                <img src="./img/odin-lined.png" alt="Odin Logo" id="logo-img">
+                <h1 id="logo">ODIN</h1>
+            </div>
+        </div>
+        <div class="right-side">
+            <p>This is not a real online service! Submitting this form will not send anything to my server.
+                I am just putting my HTML, CSS skills into practice.</p>
+            <p>Sign up now to get started.</p>
+            <form action="fake-path.com/path" method="post" class="form">
+                <h3>Please fill this out!</h3>
+
+                <div class="grid">
+                    <p>
+                        <label for="first-name">FIRST NAME</label>
+                        <input type="text" id="first-name" name="first-name" 
+                        placeholder="John" pattern="[A-Z]{1}[a-z]+" required>
+                    </p>
+                    <p>
+                        <label for="last-name">LAST NAME</label>
+                        <input type="text" id="last-name" name="last-name" 
+                        placeholder="Doe" pattern="[A-Z]{1}[a-z]+" required>
+                    </p>    
+                    <p>
+                        <label for="email">EMAIL</label>
+                        <input type="email" id="email" name="email" 
+                        placeholder="john-doe@gmail.com" required>
+                    </p>
+                    <p>
+                        <label for="number">PHONE NUMBER</label>
+                        <input type="tel" id="number" name="number" 
+                        placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                    </p>
+                    <p>
+                        <label for="password">PASSWORD (Minimum Length: 6)</label>
+                        <input type="password" name="password" id="password" minlength="6"
+                        placeholder="Password" required>
+                    </p>
+                    <p>
+                        <label for="confirm">CONFIRM PASSWORD</label>
+                        <input type="password" name="confirm" id="confirm" minlength="6"
+                        placeholder="Confirmation" required>
+                    </p>
+                </div>
+
+                <button type="submit" id="submit">Create Account</button>
+            </form>
+            <p id="log-in">Already have an account? <a>Log in</a></p>
+        </div>
+    </div>
+</body>
+</html>

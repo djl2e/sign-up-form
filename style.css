@@ -1,0 +1,151 @@
+@font-face {
+    font-family: "odin";
+    src: url("./Norse-Bold.otf");
+}
+
+@font-face {
+    font-family: "montserrat";
+    src: url("./Montserrat-Regular.ttf");
+}
+
+:root {
+    --white: rgba(225, 225, 225);
+    --grey: rgba(150, 150, 150);
+    --blue: rgba(0, 45, 160);
+    --light-blue: rgba(0, 75, 200);
+    --red: rgba(150, 0, 0);
+    --left-width: 45vw;
+}
+
+body {
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+    background-color: black;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+}
+
+.left-side {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    width: var(--left-width);
+    background-image: url("./img/clement-souchet-76YZSBqIA0c-unsplash.jpg");
+    background-size: cover;
+}
+
+.logo {
+    width: var(--left-width);
+    display: flex;
+    justify-content: center;
+    font-family: "odin", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    margin-top: 50px;
+    margin-left: 30px;
+    gap: 10px;
+    transform: rotate(-10deg);
+}
+
+#logo-img {
+    width: auto;
+    height: 100px;
+}
+
+#logo {
+    font-size: 80px;
+    margin: 0;
+    color: white;
+    margin-top: 20px;
+}
+
+.right-side {
+    font-family: "montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    padding: 0 100px 0 60px;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    margin-top: 50px;
+}
+
+.right-side p {
+    font-size: 21px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px 20px;
+}
+
+form h3 {
+    margin: 70px 0 20px 0;
+}
+
+form p {
+    padding: 0;
+    margin: 0;
+}
+
+form label {
+    display: block;
+    font-size: 11px;
+}
+
+form button {
+    margin-top: 40px;
+    font-weight: bolder;
+    font-size: 20px;
+    font-family: inherit;
+    color: var(--light-blue);
+    background-color: black;
+    border: 2px solid var(--blue);
+    border-radius: 5px;
+    padding: 10px 40px;
+}
+
+form button:hover {
+    background-color: var(--blue);
+    color: black;
+    cursor: pointer;
+}
+
+#log-in {
+    margin-top: 30px;
+    font-size: 18px;
+}
+
+form input {
+    width: 90%;
+    font-family: inherit;
+    font-size: 14px;
+    border: 1px solid var(--grey);
+    border-radius: 3px;
+    background-color: black;
+    color: var(--white);
+}
+
+form input:focus {
+    border: 1px solid;
+    transform: scaleY(1.1);
+}
+
+form input:invalid:not(:placeholder-shown) {
+    border-color: var(--red);
+}
+
+.right-side a {
+    color: var(--light-blue);
+    font-weight: 900px;
+}
+
+.right-side a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
